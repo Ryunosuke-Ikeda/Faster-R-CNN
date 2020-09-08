@@ -19,8 +19,8 @@ from model import model
 
 #datasetの読み込み
 #データの場所
-xml_paths_train=glob("########/train/*.xml")
-xml_paths_val=glob("######/annotations/*.xml")
+xml_paths_train=glob("########/*.xml")
+xml_paths_val=glob("######/*.xml")
 
 image_dir_train="#######/train"
 image_dir_val="########/img"
