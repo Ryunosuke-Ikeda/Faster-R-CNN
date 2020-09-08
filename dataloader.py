@@ -12,11 +12,11 @@ from torchvision.models.detection.faster_rcnn import FastRCNNPredictor
 
 
 #データの場所
-xml_paths_train=glob("../../dataset/bdd100K_to_VOC/train_test/*.xml")
-xml_paths_val=glob("../../dataset/hokkaido_test/val_test/annotations/*.xml")
+xml_paths_train=glob("######/*.xml")
+xml_paths_val=glob("######/*.xml")
 
-image_dir_train="D:/bdd100k/bdd100k/bdd100k/images/100k/train"
-image_dir_val="../../dataset/hokkaido_test/val_test/img"
+image_dir_train="######/train"
+image_dir_val="######/img"
 
 
 class xml2list(object):
@@ -133,10 +133,9 @@ def dataloader (xml_paths_train,xml_paths_val,image_dir_train,image_dir_val):
 
     xml_paths=xml_paths_val
 
-    #hokkaidouval
-    classes = ['car', 'bus', 'person', 'bicycle', 'motorbike', 'train']
+  
     #bdd100kval
-    #classes = ['person', 'traffic light', 'train', 'traffic sign', 'rider', 'car', 'bike', 'motor', 'truck', 'bus']
+    classes = ['person', 'traffic light', 'train', 'traffic sign', 'rider', 'car', 'bike', 'motor', 'truck', 'bus']
 
 
     transform_anno = xml2list(classes)
@@ -159,7 +158,7 @@ def dataloader (xml_paths_train,xml_paths_val,image_dir_train,image_dir_val):
 
 
     #画像の読み込み
-    # 背景のクラス（0）が必要のため、dog, cat のラベルは1スタートにする
+    # 背景のクラス（0）が必要
     df["class"] = df["class"] + 1
 
     image_dir1=image_dir_train
