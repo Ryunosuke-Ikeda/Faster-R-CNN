@@ -19,11 +19,11 @@ from model import model
 
 #datasetの読み込み
 #データの場所
-xml_paths_train=glob("../../dataset/bdd100K_to_VOC/train/*.xml")
-xml_paths_val=glob("../../dataset/hokkaido_test/val_test/annotations/*.xml")
+xml_paths_train=glob("########/train/*.xml")
+xml_paths_val=glob("######/annotations/*.xml")
 
-image_dir_train="D:/bdd100k/bdd100k/bdd100k/images/100k/train"
-image_dir_val="../../dataset/hokkaido_test/val_test/img"
+image_dir_train="#######/train"
+image_dir_val="########/img"
 
 #出力ファイルの名前
 file_name='train_ALL_bdd100k'
