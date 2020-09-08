@@ -13,11 +13,11 @@ from dataloader import dataloader
 
 #datasetの読み込み
 #データの場所
-xml_paths_train=glob("../../dataset/bdd100K_to_VOC/train_test/*.xml")
-xml_paths_val=glob("../../dataset/hokkaido_test/val_test/annotations/*.xml")
+xml_paths_train=glob("####/*.xml")
+xml_paths_val=glob("####/*.xml")
 
-image_dir_train="D:/bdd100k/bdd100k/bdd100k/images/100k/train"
-image_dir_val="../../dataset/hokkaido_test/val_test/img"
+image_dir_train="####/train"
+image_dir_val="####/img"
 
 
 #データをロード
