@@ -115,5 +115,5 @@ for epoch in range(num_epochs):
          
 
 #セーブ
-torch.save(model, './model/'+file_name+'.pt')
+torch.save(model, './'+file_name+'.pt')
 
